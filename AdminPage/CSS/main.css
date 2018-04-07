@@ -1,0 +1,37 @@
+﻿body {
+}
+#Mask_Show{ /*遮罩层*/
+    position:absolute ; 
+    top: 0px ; 
+    filter: alpha(opacity=60) ; 
+    background-color: #777 ;        
+    z-index: 1002 ; 
+    left: 0px ; 
+    opacity:0.5 ; 
+    -moz-opacity:0.5 ;  
+}
+
+
+.New_Alert{
+    background-color:white;
+    box-shadow: 10px 10px 5px #888888;
+    display:none;
+    position:absolute; 
+    top:15%;    
+    z-index:1003;
+}
+#New_Alert .newTitle{
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    line-height: 1.1;
+    display:block;
+    cursor:move;
+}
+#New_Alert .close{
+    position:absolute;
+    right:15px;
+    top:20px;
+}
