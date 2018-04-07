@@ -11,10 +11,13 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
+    <form id="form1" runat="server">
     <div class="head">
 			<div class="nav">
-				<img class="logo" src="image/logo.png" height="55">
-				<ul class="nav-con">
+				
+                <img class="logo" src="image/logo.png" height="55">
+				
+                <ul class="nav-con">
 					<li><a href="#">首页</a></li>
 					<li><a href="#">资讯</a></li>
 					<li><a href="#">问答</a></li>
@@ -22,23 +25,48 @@
 					<li><a href="#">购物</a></li>
 					<li><a href="#">旅途</a></li>
 				</ul>
-			</div>
-			<div class="logon">
-				
+                
+                <span dir ="rtl"class="login">
+                   
+                     <asp:Label ID="RegisterUser" 
+                        runat="server" Text="Label" Font-Size="Medium" Font-Names="黑体"  Visible="False" BackColor="Black" 
+                        BorderColor="#6699FF" ForeColor="#3366FF"></asp:Label>
+                    
+                    <asp:Label ID="hello" runat="server"  Font-Size="Medium" Font-Names="黑体" Text="Label" ForeColor="#3366FF"></asp:Label> 
+                    
+                    <asp:LinkButton 
+                        ID="login_Button" runat="server" ForeColor="#99CCFF" PostBackUrl="~/login.aspx" Font-Names="黑体" Font-Size="Medium">登录</asp:LinkButton>
+                    
+                    <asp:LinkButton ID="goback" runat="server" Font-Size="Medium" 
+                        Font-Names="黑体" ForeColor="#99CCFF" onclick="goback_Click" Visible="False">退出</asp:LinkButton>
+                 
+                </span>
 			</div>
 		</div>
+
 		<div class="con" style="min-height: 612px;">
-			<form id="form1" runat="server">
-                <div>
+           
+             <div>
                     <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         
                     </asp:ContentPlaceHolder>
-                </div>
-            </form>
+             </div>
+		
+        </div>
+		<div class="foot" runat="server">
+		    <p class="address">&copy;Kylin团队&nbsp;&nbsp;&nbsp;联系我们：kylin.smq@qq.com</p>	
+           
+             <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                        <ContentTemplate>
+                            <asp:ScriptManager ID="ScriptManager1" runat="server">
+                            </asp:ScriptManager>
+                            <asp:Timer ID="Timer1" runat="server" Interval="1000" ontick="Timer1_Tick">
+                            </asp:Timer>
+                            <asp:Label ID="showTime" runat="server" Font-Size="Medium" CssClass="showtime"></asp:Label>
+                        </ContentTemplate>
+            </asp:UpdatePanel>
+
 		</div>
-		<div class="foot">
-			
-		</div>
-    
+     </form>
 </body>
 </html>

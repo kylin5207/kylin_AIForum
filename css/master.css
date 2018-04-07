@@ -1,4 +1,4 @@
-body,ul,li{
+form,body,ul,li{
 	margin:0;
 	padding:0;
 }
@@ -13,17 +13,17 @@ body{
 	height: 55px;
 	width:100%;
 	filter: Alpha(Opacity=30);
-	
+	z-index:2;
 }
 
 .nav{
 	margin:0 auto;
 	height: 55px;
-	width: 800px;
+	width: 1100px;
 }
 
 .logo{
-	margin:0px 30px;	
+    margin:0px 30px 0px 0px; 	
 	float: left;
 }
 
@@ -39,7 +39,7 @@ body{
 .nav-con li{
 	list-style: none;
 	float:left;
-	width: 70px;
+	width: 110px;
 	text-align: center;
 }
 
@@ -64,6 +64,8 @@ body{
 .con{
 	top: 60px;
     position: relative;
+    width:1100px;
+    margin:0px auto;
 }
 
 .foot{
@@ -71,4 +73,29 @@ body{
 	height: 50px;
 	position: relative;
 	bottom: 0px;
+}
+
+p.address{
+	margin: 0px auto;
+	padding:0px;
+	vertical-align: middle;
+	text-align: center;
+	color: #FF9537;
+    height:30px
+}
+.showtime{
+    margin:0 auto;
+    padding:0px;
+    height:20px;
+    text-align:center;
+    color:#FF9537;
+    margin-left:45%;
+}
+
+span.login{
+    margin-top:0px;
+    margin-left:150px;
+    float:left;
+    height:55px;
+    line-height:55px;
 }
