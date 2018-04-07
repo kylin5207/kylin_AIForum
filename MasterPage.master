@@ -5,17 +5,40 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="css/master.css" rel="stylesheet" />
     <title></title>
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form id="form1" runat="server">
-    <div>
-        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+    <div class="head">
+			<div class="nav">
+				<img class="logo" src="image/logo.png" height="55">
+				<ul class="nav-con">
+					<li><a href="#">首页</a></li>
+					<li><a href="#">资讯</a></li>
+					<li><a href="#">问答</a></li>
+					<li><a href="#">聚吧</a></li>
+					<li><a href="#">购物</a></li>
+					<li><a href="#">旅途</a></li>
+				</ul>
+			</div>
+			<div class="logon">
+				
+			</div>
+		</div>
+		<div class="con" style="min-height: 612px;">
+			<form id="form1" runat="server">
+                <div>
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         
-        </asp:ContentPlaceHolder>
-    </div>
-    </form>
+                    </asp:ContentPlaceHolder>
+                </div>
+            </form>
+		</div>
+		<div class="foot">
+			
+		</div>
+    
 </body>
 </html>
