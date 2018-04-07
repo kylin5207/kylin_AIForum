@@ -10,7 +10,7 @@ using System.Data;
 /// DataBase 的摘要说明
 /// 数据库操作
 /// </summary>
-public class DataBase
+public class DataBase :IDataBase
 {
     static string connStr = System.Web.Configuration.WebConfigurationManager.ConnectionStrings["Connection"].ToString();
     SqlConnection conn = new SqlConnection(connStr);

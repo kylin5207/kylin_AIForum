@@ -5136,7 +5136,7 @@ tr:hover .move-btn {
 }
 
 .header {
-	background-color: #47c68c;
+	background-color: #4C474E;
 	line-height: 50px;
 	position: fixed;
 	padding: 0 10px;
@@ -5159,8 +5159,8 @@ tr:hover .move-btn {
 	display: inline-block;
 	height: 14px;
 	margin: 18px 10px 18px 20px;
-	border-left: 1px solid #40b07d;
-	border-right: 1px solid #4bda99
+	border-left: 1px solid #4C474E;
+	border-right: 1px solid #4C474E
 }
 
 .header .line2 {
