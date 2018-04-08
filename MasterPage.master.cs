@@ -9,6 +9,11 @@ public partial class MasterPage : System.Web.UI.MasterPage
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        if (LoginBase.username != string.Empty)
+        {
+            RegisterUser.Visible = true;
+            RegisterUser.Text = LoginBase.username;
+        }
         if (DateTime.Now.Hour < 12)
         {
             hello.Text = "上午好~";
@@ -21,11 +26,13 @@ public partial class MasterPage : System.Web.UI.MasterPage
         {
             hello.Text = "晚上好~";
         }
+
+
     }
-    protected void Timer1_Tick(object sender, EventArgs e)
-    {
-        showTime.Text = DateTime.Now.ToShortDateString() + " " + DateTime.Now.ToShortTimeString();
-    }
+    //protected void Timer1_Tick(object sender, EventArgs e)
+    //{
+    //    showTime.Text = DateTime.Now.ToShortDateString() + " " + DateTime.Now.ToShortTimeString();
+    //}
 
     protected void goback_Click(object sender, EventArgs e)
     {

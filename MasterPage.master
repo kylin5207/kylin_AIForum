@@ -60,8 +60,8 @@
                         <ContentTemplate>
                             <asp:ScriptManager ID="ScriptManager1" runat="server">
                             </asp:ScriptManager>
-                            <asp:Timer ID="Timer1" runat="server" Interval="1000" ontick="Timer1_Tick">
-                            </asp:Timer>
+                            <%--<asp:Timer ID="Timer1" runat="server" Interval="1000" ontick="Timer1_Tick">
+                            </asp:Timer>--%>
                             <asp:Label ID="showTime" runat="server" Font-Size="Medium" CssClass="showtime"></asp:Label>
                         </ContentTemplate>
             </asp:UpdatePanel>

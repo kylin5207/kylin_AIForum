@@ -55,7 +55,7 @@ public class LoginBase
         {
             if (HttpContext.Current.Session["userbase"] != null)
             {
-                return UserInfo.ID;
+                return UserInfo.UserID;
             }
             return string.Empty;
         }
@@ -126,7 +126,9 @@ public class LoginBase
         HttpContext.Current.Session["userbase"] = _userinfo;
 
     }
-    //消除Session
+    /// <summary>
+    /// 消除Session
+    /// </summary>
     public static void logoutSession()
     {
         HttpContext.Current.Session["userbase"] = null;
