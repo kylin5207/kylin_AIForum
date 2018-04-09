@@ -31,6 +31,8 @@ public partial class login : System.Web.UI.Page
             UserInfo userInfo = new UserInfo();
             userInfo.UserID = dt_user.Rows[0]["userId"].ToString();
             userInfo.UserName = dt_user.Rows[0]["userName"].ToString();
+            userInfo.RoleId = (int)dt_user.Rows[0]["roleID"];
+            userInfo.Image = dt_user.Rows[0]["userPic"].ToString();
 
             LoginBase.SetSession(userInfo);
             Response.Redirect("~/index.aspx");

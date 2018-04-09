@@ -1,0 +1,69 @@
+﻿body,div{
+     margin:0px;
+     padding:0px;
+}
+
+body{
+    background-image:url(/image/logbg.jpg);
+    background-size:100% 100%;
+    height:600px;
+    width:100%;
+}
+
+.register-con{
+    background-color:white;
+    opacity:0.4;
+    height:400px;
+    width:100%;
+    margin-top:150px;
+
+}
+
+.register-disk{
+    z-index:100;
+    opacity:1; 
+    background-color:#FFFFFF;
+    height:480px;
+    width:600px;
+    margin-left:370px;
+    margin-top:-435px;
+    position:relative;
+}
+
+.register-title{
+    width:600px;
+    margin:0px auto;
+    margin-left:80px;
+    text-align:center;
+}
+
+.register-table{
+    margin:0px auto;
+    background-color:#B0EFFF;
+    height:400px;
+    width:500px;
+    position:absolute;
+    left:50px;
+    top:50px;
+}
+
+.table-con{
+    margin-left:25px;
+}
+
+.rowname{
+    text-align:center;
+}
+
+.strike{
+    color:red;
+    width:5px;
+}
+
+.register-now{
+    margin-top:14px;
+    margin-left:147px;
+    width:200px;
+    height:50px;
+    font-size:12px;
+}

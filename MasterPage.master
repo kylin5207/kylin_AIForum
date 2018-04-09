@@ -29,13 +29,13 @@
                 <span dir ="rtl"class="login">
                    
                      <asp:Label ID="RegisterUser" 
-                        runat="server" Text="Label" Font-Size="Medium" Font-Names="黑体"  Visible="False" BackColor="Black" 
+                        runat="server" Text="Label" Font-Size="Medium" Font-Names="黑体"  Visible="False" 
                         BorderColor="#6699FF" ForeColor="#3366FF"></asp:Label>
                     
                     <asp:Label ID="hello" runat="server"  Font-Size="Medium" Font-Names="黑体" Text="Label" ForeColor="#3366FF"></asp:Label> 
-                    
+                    &nbsp;&nbsp;
                     <asp:LinkButton 
-                        ID="login_Button" runat="server" ForeColor="#99CCFF" PostBackUrl="~/login.aspx" Font-Names="黑体" Font-Size="Medium">登录</asp:LinkButton>
+                        ID="login_Button" runat="server" ForeColor="#99CCFF" PostBackUrl="~/login.aspx" Font-Names="黑体" Font-Size="Medium">请登录</asp:LinkButton>
                     
                     <asp:LinkButton ID="goback" runat="server" Font-Size="Medium" 
                         Font-Names="黑体" ForeColor="#99CCFF" onclick="goback_Click" Visible="False">退出</asp:LinkButton>
@@ -60,8 +60,6 @@
                         <ContentTemplate>
                             <asp:ScriptManager ID="ScriptManager1" runat="server">
                             </asp:ScriptManager>
-                            <%--<asp:Timer ID="Timer1" runat="server" Interval="1000" ontick="Timer1_Tick">
-                            </asp:Timer>--%>
                             <asp:Label ID="showTime" runat="server" Font-Size="Medium" CssClass="showtime"></asp:Label>
                         </ContentTemplate>
             </asp:UpdatePanel>
