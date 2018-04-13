@@ -1,0 +1,25 @@
+﻿.con{
+    height:1550px;
+    width:1400px;
+}
+.con-head{
+    margin:0px;
+    padding:0px;
+    height:340px;
+}
+.contain{
+    height:1200px;
+    margin-left:-25px;
+}
+.clearfix:after{
+    content:".";
+    display:block;
+    height:0px;
+    line-height:0px;
+    visibility:hidden;
+    clear:both;
+}
+.clearfix{
+    zoom:1;
+}
+.slideBox{ width:1350px; height:500px; margin-top:-150px;margin-left:0px; margin-right:0px; overflow:hidden; position:absolute; border:0px;  }

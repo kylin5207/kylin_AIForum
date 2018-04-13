@@ -1,0 +1,105 @@
+﻿con,con-head{
+    margin:0px;
+    padding:0px;
+}
+con-head{
+    height:400px;
+}
+/* css 重置 */
+*{margin:0; padding:0; list-style:none; }
+img{ border:0;  }
+a{ text-decoration:none; color:#333;  }
+
+/* 本例子css */
+.slideBox{ width:1350px; height:400px; margin-top:-150px;margin-left:0px; margin-right:0px; overflow:hidden; position:absolute; border:0px;  }
+.slideBox .hd{ height:15px; overflow:hidden; position:absolute; right:600px; bottom:5px; z-index:1; }
+.slideBox .hd ul{ overflow:hidden; zoom:1; float:left; }
+.slideBox .hd ul li{ float:left; margin-right:40px;  width:15px; height:15px; line-height:14px; text-align:center;; cursor:pointer; }
+.slideBox .hd ul li.on{ background-color:transparent; }
+.slideBox .bd{ position:relative; height:400px; z-index:0;margin:0px;}
+.slideBox .bd li{ zoom:1; vertical-align:middle; }
+.slideBox .bd img{ width:100%; height:400px; display:block;  }
+
+/* 下面是前/后按钮代码，如果不需要删除即可 */
+.slideBox .prev,
+.slideBox .next{ position:absolute; left:3%; top:50%; margin-top:-25px; display:block; width:32px; height:40px; background:url(images/slider-arrow.png) -110px 5px no-repeat; filter:alpha(opacity=50);opacity:0.5;   }
+.slideBox .next{ left:auto; right:3%; background-position:8px 5px; }
+.slideBox .prev:hover,
+.slideBox .next:hover{ filter:alpha(opacity=100);opacity:1;  }
+.slideBox .prevStop{ display:none;  }
+.slideBox .nextStop{ display:none;  }
+
+.con{
+    height:3570px;
+    width:1350px;
+    margin:0px;
+    padding:0px;
+    background-color:#D5DCE1;
+}
+.con-head{
+    margin:0px;
+    padding:0px;
+    width:1350px;
+    height:250px;
+}
+.contain{
+    width:1335px;
+    height:3100px;
+    margin-top:0px;
+    margin-left:35px;
+    margin-right:0px;
+
+}
+.clearfix:after{
+    content:".";
+    display:block;
+    height:0px;
+    line-height:0px;
+    visibility:hidden;
+    clear:both;
+}
+.clearfix{
+    zoom:1;
+}
+
+.con-title{
+    padding-left:20px;
+    background-color:#4C80BA;
+    color:white;
+}
+
+.question-title{
+    margin:0px auto;
+    display:inline-block;
+    font-size:xx-large;
+    height:30px;
+    line-height:30px;
+    text-align:center;
+    color:#999B9C;
+}
+.question-con
+{
+   display:inline-block;
+   margin:0px;
+   padding:5px auto auto 20px;
+   height:90px;
+}
+
+.date{
+    display:inline-block;
+    margin:0;
+    padding-right:10px;
+    height:10px;
+    font-size:10px;
+    line-height:10px;
+    color:#2A94CB;
+}
+.more{
+    margin-left:1050px;
+}
+.more a{
+    color:white;
+}
+.answerlist{
+    overflow:hidden;
+}

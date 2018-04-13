@@ -33,7 +33,7 @@ public class LoginBase
             return string.Empty;
         }
     }
-    public static bool IsNotice
+   /* public static bool IsNotice
     {
         get
         {
@@ -48,7 +48,7 @@ public class LoginBase
             UserInfo.IsNotice = value;
             HttpContext.Current.Session["userbase"] = UserInfo;
         }
-    }
+    }*/
     public static string ID
     {
         get
@@ -60,17 +60,7 @@ public class LoginBase
             return string.Empty;
         }
     }
-    public static string Email
-    {
-        get
-        {
-            if (HttpContext.Current.Session["userbase"] != null)
-            {
-                return UserInfo.Email;
-            }
-            return string.Empty;
-        }
-    }
+
     public static int RoleId
     {
         get
@@ -98,18 +88,8 @@ public class LoginBase
             HttpContext.Current.Session["userbase"] = UserInfo;
         }
     }
-    public static int Certifi
-    {
-        get
-        {
-            if (HttpContext.Current.Session["userbase"] != null)
-            {
-                return UserInfo.Certifi;
-            }
-            return 0;
-        }
-    }
-    public static string Register_Time
+  
+   /* public static string Register_Time
     {
         get
         {
@@ -119,11 +99,12 @@ public class LoginBase
             }
             return string.Empty;
         }
-    }
+    }*/
 
     public static void SetSession(UserInfo _userinfo)
     {
         HttpContext.Current.Session["userbase"] = _userinfo;
+        HttpContext.Current.Session["userId"] = _userinfo.UserID;
 
     }
     /// <summary>
@@ -133,6 +114,8 @@ public class LoginBase
     {
         HttpContext.Current.Session["userbase"] = null;
         HttpContext.Current.Session.Remove("userbase");
+        HttpContext.Current.Session["userId"] = null;
+        HttpContext.Current.Session.Remove("userId");
         HttpContext.Current.Session.RemoveAll(); //用于结果了所有的键值
         HttpContext.Current.Session.Abandon();              //用于结果了当前会话
     }

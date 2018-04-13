@@ -3,42 +3,47 @@
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <link href="css/master.css" rel="stylesheet" />
-    <title></title>
-    <asp:ContentPlaceHolder id="head" runat="server">
-    </asp:ContentPlaceHolder>
-</head>
-<body>
-    <form id="form1" runat="server">
-    <div class="head">
-			<div class="nav">
+  
+    <head runat="server">
+    
+         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+         <link href="css/master.css" rel="stylesheet" />
+         <title></title>
+         <asp:ContentPlaceHolder id="head" runat="server">
+         </asp:ContentPlaceHolder>
+    </head>
+    <body>
+        <form id="form1" runat="server">
+            <div class="head">
+			    <div class="nav">
 				
-                <img class="logo" src="image/logo.png" height="55">
+                    <img class="logo" src="image/logo.png" height="55">
 				
-                <ul class="nav-con">
-					<li><a href="#">首页</a></li>
-					<li><a href="#">资讯</a></li>
-					<li><a href="#">问答</a></li>
-					<li><a href="#">聚吧</a></li>
-					<li><a href="#">购物</a></li>
-					<li><a href="#">旅途</a></li>
-				</ul>
+                    <ul class="nav-con">
+					    <li><a href="Index.aspx">首页</a></li>
+					    <li><a href="news.aspx">资讯</a></li>
+                        <li><a href="products.aspx">产品</a></li>
+					    <li><a href="Question.aspx" >问答</a></li>
+					    <li><a href="#">聚吧</a></li>
+					    <li><a href="#">旅途</a></li>
+				    </ul>
                 
-                <span dir ="rtl"class="login">
-                   
-                     <asp:Label ID="RegisterUser" 
+                    <span dir ="rtl"class="login">
+                    
+                     
+                    <asp:Label ID="hello" runat="server"  Font-Size="Medium" Font-Names="黑体" Text="Label" ForeColor="#3366FF"></asp:Label> 
+                    
+                    
+                    <asp:Label ID="RegisterUser" 
                         runat="server" Text="Label" Font-Size="Medium" Font-Names="黑体"  Visible="False" 
                         BorderColor="#6699FF" ForeColor="#3366FF"></asp:Label>
-                    
-                    <asp:Label ID="hello" runat="server"  Font-Size="Medium" Font-Names="黑体" Text="Label" ForeColor="#3366FF"></asp:Label> 
                     &nbsp;&nbsp;
-                    <asp:LinkButton 
-                        ID="login_Button" runat="server" ForeColor="#99CCFF" PostBackUrl="~/login.aspx" Font-Names="黑体" Font-Size="Medium">请登录</asp:LinkButton>
+                    <asp:LinkButton log
+                        ID="login_Button" runat="server" ForeColor="#99CCFF" PostBackUrl="~/login.aspx" Font-Names="黑体" Font-Size="Medium" CssClass="loginbtn">请登录</asp:LinkButton>
                     
                     <asp:LinkButton ID="goback" runat="server" Font-Size="Medium" 
                         Font-Names="黑体" ForeColor="#99CCFF" onclick="goback_Click" Visible="False">退出</asp:LinkButton>
+                    
                  
                 </span>
 			</div>

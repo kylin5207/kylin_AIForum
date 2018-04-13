@@ -4,7 +4,7 @@ form,body,ul,li{
 }
 
 body{
-		
+		overflow-x:hidden;
 }
 
 .head{
@@ -12,25 +12,25 @@ body{
 	background-color: #4C474E;
 	height: 55px;
 	width:100%;
-	filter: Alpha(Opacity=30);
+    opacity:0.8;
 	z-index:2;
 }
 
 .nav{
 	margin:0 auto;
 	height: 55px;
-	width: 1100px;
+	width: 1440px;
 }
 
 .logo{
-    margin:0px 30px 0px 0px; 	
+    margin:0px 30px 0px 140px; 	
 	float: left;
 }
 
 .nav-con ul{
 	margin:0 auto;
 	height: 55px;
-	width: 420px;
+	width: 800px;
 	float:left;
 }
 
@@ -39,7 +39,7 @@ body{
 .nav-con li{
 	list-style: none;
 	float:left;
-	width: 110px;
+	width: 130px;
 	text-align: center;
 }
 
@@ -64,15 +64,17 @@ body{
 .con{
 	top: 60px;
     position: relative;
-    width:1300px;
+    width:1400px;
     margin:0px auto;
 }
 
 .foot{
 	background-color: #4C474E;
 	height: 50px;
+    width:1440px;
 	position: relative;
-	bottom: 0px;
+	bottom: -100px;
+    z-index:2;
 }
 
 p.address{
@@ -94,8 +96,12 @@ p.address{
 
 span.login{
     margin-top:0px;
-    margin-left:150px;
+    margin-left:100px;
     float:left;
     height:55px;
     line-height:55px;
+}
+
+.loginbtn{
+    background-image:url("image/loginbtnbg.png";
 }

@@ -14,7 +14,7 @@ public partial class register: System.Web.UI.Page
   
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        
     }
 
     /*用于检测用户名是否已经存在的方法，返回bool*/

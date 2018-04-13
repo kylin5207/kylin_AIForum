@@ -1,0 +1,37 @@
+﻿.con{
+    height:3570px;
+    width:1350px;
+    margin:0px;
+    padding:0px;
+    background-color:#D5DCE1;
+}
+.con-head{
+    margin:0px;
+    padding:0px;
+    width:1350px;
+    height:340px;
+}
+.contain{
+    width:1335px;
+    height:3100px;
+    margin-top:0px;
+    margin-left:35px;
+    margin-right:0px;
+}
+.clearfix:after{
+    content:".";
+    display:block;
+    height:0px;
+    line-height:0px;
+    visibility:hidden;
+    clear:both;
+}
+.clearfix{
+    zoom:1;
+}
+.new-title{
+    margin-top:10px;
+    margin-left:10px;
+    padding:10px;
+    text-align:center;
+}
