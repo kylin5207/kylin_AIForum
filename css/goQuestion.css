@@ -1,0 +1,29 @@
+﻿.con-title{
+    width:1350px;
+    margin-left:0px;
+    padding:0px;
+}
+
+.contain{
+    width:1400px;
+    height:700px;
+    margin-top:0px;
+    margin-left:0px;
+    margin-right:0px;
+    margin-bottom:-50px;
+    background-color:#D5DCE1;
+}
+
+.table-title{
+    padding-left:20px;
+    background-color:#4C80BA;
+    color:white;
+    display:inline-block;
+    width:700px;
+    height:40px;
+    line-height:40px;
+}
+
+.answertitle{
+    margin-left:65px;
+}
