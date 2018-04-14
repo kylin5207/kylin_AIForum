@@ -1,0 +1,123 @@
+﻿/*chatbox*/
+.chatbox{
+     overflow:hidden; 
+     background-color:rgba(255, 255, 255, 0.77);
+}
+
+/*chat_top*/
+.chat_top{ height:60px; border-bottom:1px solid #eee;}
+.uinfo{ margin:10px 0; float:right; padding-right:20px;}
+.uface{ float:left; height: 40px;}
+.uface img{ -moz-border-radius:50%; -webkit-border-radius:50%; border-radius:50%;}
+.uinfo .uname{ float:left; line-height:40px; margin-left:10px; color:#2E4059; position:relative;}
+
+
+/*chat_message*/
+.chat_message{
+    display:inline-block;
+    width:100%;
+}
+
+/*chat_left*/
+.chat_left{ 
+    padding:30px; 
+    float:left;
+}
+.message_box{ 
+    background-color:#FFF; 
+    margin-bottom:20px;
+    overflow:auto;
+    height:500px;
+    overflow:auto;
+    width:800px;
+    /*border:1px solid #B4C0CE;*/
+}
+.msg_item{ 
+    margin-bottom:20px; 
+    position:relative;
+    display:inline-block;
+}
+.msg_item .uface{ 
+    position:absolute; 
+    bottom:0px;
+
+}
+.msg_item .item_right{ 
+    margin-left:45px; 
+    float:left; 
+    margin-right:15px;
+
+}
+.msg_item .msg{ 
+    background-color:#F4F6F8;
+    padding:10px 15px; 
+    line-height:24px; 
+    -moz-border-radius:10px;
+     -webkit-border-radius:10px; 
+    border-radius:10px; 
+    color:#2E4059; 
+    position: relative; 
+    margin-bottom:5px;
+
+}
+.msg.other{
+     background-color:#E0F1FC;
+}
+.msg.own{
+     background-color:#bdf7f5;
+}/*自己的聊天记录显示为蓝色*/
+
+ /*聊天文字外观*/
+.msg_item .msg:before {
+content: "";
+position: absolute;
+bottom: -12px;
+left: 10px;
+border-width: 12px 12px 0 0 ;
+border-style: solid;
+border-color: #E0F1FC transparent;
+display: block;
+width: 0;
+}
+.msg_item .msg.own:before{ border-color:#bdf7f5 transparent;}
+
+.msg_item .name_time{ font-size:12px; color:#7E90A5; line-height:30px; padding-left:10px;}
+
+.write_box{ height:100px; overflow:hidden; border-radius:5px;}
+.write_area{ 
+    border: 2px solid #E3E8ED;
+    border-bottom: none;
+    padding: 5px;
+    outline: none;
+    color: #0c0a0a;
+    margin: 0;
+    vertical-align: bottom;
+    /*width: -moz-calc(100% - 14px);
+    width: -webkit-calc(100% - 14px);
+    width: calc(100% - 14px);*/
+    max-width:100% !important;
+    height: 56px;
+
+}
+.facebox{ height:32px; width:100%; background-color:#E3E8ED;padding-right:0px;}
+.sub_but{ float:right; padding:0 25px; background-color:#7E90A5; outline:none; border:none; height:32px; cursor:pointer; line-height:30px; color:#FFF;}
+
+
+/*chat_right*/
+.chat_right{ width:199px; height:100%; float:left; border-left:1px solid #eee;}
+.user_list{ padding:0; overflow:auto; height:100%;max-height:550px;}
+.user_list li{ padding:10px 20px; color:#2E4059; cursor:pointer;}
+.user_list li:hover,.user_list li.selected{ background-color:#F4F6F8;}
+.user_list li span{ display:block; float:left; width:30px; height:30px; margin-right:10px;}
+.user_list li em{ height:30px; line-height:30px;}
+.user_list li small{ width:10px; height:10px; margin:10px; float:left; -moz-border-radius:50%; -webkit-border-radius:50%; border-radius:50%;}
+small.online{ background-color:#57B869;}
+small.offline{ background-color:#EB3E3E;}
+.user_list li img{ -moz-border-radius:50%; -webkit-border-radius:50%; border-radius:50%; vertical-align:middle;}
+
+
+/*expression - 表情,有待增加*/
+.expression{ float:left;}
+
+/*chat_type - 聊天性质,私聊|群聊*/
+.chat_type{ float:left; line-height:30px; padding-left:10px;}
