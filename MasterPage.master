@@ -25,7 +25,7 @@
                         <li><a href="products.aspx">产品</a></li>
 					    <li><a href="Question.aspx" >问答</a></li>
 					    <li><a href="Chatting.aspx">聚吧</a></li>
-					    <li><a href="#">旅途</a></li>
+					    <li><a href="Mytrip.aspx">旅途</a></li>
 				    </ul>
                 
                     <span dir ="rtl"class="login">

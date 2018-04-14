@@ -33,6 +33,7 @@ public partial class login : System.Web.UI.Page
             userInfo.UserName = dt_user.Rows[0]["userName"].ToString();
             userInfo.RoleId = (int)dt_user.Rows[0]["roleID"];
             userInfo.Image = dt_user.Rows[0]["userPic"].ToString();
+            userInfo.userNickname = dt_user.Rows[0]["userNickname"].ToString();
 
             LoginBase.SetSession(userInfo);
             Response.Redirect("~/index.aspx");

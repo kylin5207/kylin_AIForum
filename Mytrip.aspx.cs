@@ -10,6 +10,6 @@ public partial class Mytrip : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         this.Title = "旅途";
-        this.spacename.Text = LoginBase.SpaceName;
+        this.spacename.Text = LoginBase.userNickname.ToString();
     }
 }

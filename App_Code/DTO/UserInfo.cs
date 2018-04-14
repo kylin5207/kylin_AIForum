@@ -15,7 +15,7 @@ public class UserInfo
     /// <summary>
     /// 用户ID
     /// </summary>
-    public string SpaceName = "";
+    public string userNickname = "";
     /// <summary>
     /// 用户名
     /// </summary>

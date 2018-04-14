@@ -60,13 +60,13 @@ public class LoginBase
             return string.Empty;
         }
     }
-    public static string SpaceName
+    public static string userNickname
     {
         get
         {
             if (HttpContext.Current.Session["userbase"] != null)
             {
-                return UserInfo.SpaceName;
+                return UserInfo.userNickname;
             }
             return string.Empty;
         }
