@@ -39,23 +39,29 @@ function connect() {
     ws = new WebSocket(address);
     //打开事件
     ws.onopen = function (e) {
-        $.ajax({
-            url: "/Home/UserJoinOnline",
-            dataType: 'json',
-            type: 'post',
-            success: function (result) {
-                var json = eval('(' + result + ')');
-                var num = json[0]["type"];
-                var returnval = json[0]["data"];
-                //0-成功 1-服务器操作异常 2-用户操作异常
-                if (num != "0") {
-                    layer.alert(returnval);
-                }
-            },
-            error: function (result) {
-                console.log('用户加入聊天室出现错误'+result);
-            }
-        });
+        if (fromname != null && fromname != "") {
+            layer.alert("欢迎加入在线聊天室");
+        }
+        else {
+            layer.alert("请登录后重试");
+        }
+        //$.ajax({
+        //    url: "/Home/UserJoinOnline",
+        //    dataType: 'json',
+        //    type: 'post',
+        //    success: function (result) {
+        //        var json = eval('(' + result + ')');
+        //        var num = json[0]["type"];
+        //        var returnval = json[0]["data"];
+        //        //0-成功 1-服务器操作异常 2-用户操作异常
+        //        if (num != "0") {
+        //            layer.alert(returnval);
+        //        }
+        //    },
+        //    error: function (result) {
+        //        console.log('用户加入聊天室出现错误'+result);
+        //    }
+        //});
     };
     //获得消息事件
     ws.onmessage = function (msg) {
@@ -165,16 +171,16 @@ String.prototype.format = function () {
 //退出WS
 function quit() {
     if (ws) {
-        $.ajax({
-            url: "/Home/UserLeave",
-            dataType: 'json',
-            type: 'post',
-            success: function (str) {
-            },
-            error: function (result) {
-                console.log('用户退出错误'+result);
-            }
-        });
+        //$.ajax({
+        //    url: "/Home/UserLeave",
+        //    dataType: 'json',
+        //    type: 'post',
+        //    success: function (str) {
+        //    },
+        //    error: function (result) {
+        //        console.log('用户退出错误'+result);
+        //    }
+        //});
         ws.send("ga_me_ov_er_ysl_kylin_77")
         ws.close();
         ws = null;
