@@ -4,7 +4,7 @@ var UserImg = document.getElementById('ContentPlaceHolder1_UserPic').src;
 
 var msgContainer = document.getElementById('message_box');
 var text = document.getElementById('message');
-connect1();
+connect();
 var ws;
 //var WebSocketaddress;
 function connect1() {
