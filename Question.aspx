@@ -68,7 +68,9 @@
                                 <span class="date">
                                 提问时间：<asp:Label ID="datetimeLabel" runat="server" Text='<%# Eval("datetime") %>' />
                                 </span>
-                                <asp:ImageButton ID="goQuestion" runat="server" ImageUrl="~/image/goquestion.png" CssClass="goQues" />
+                            
+                                <span style="height:50px; width:150px; float:right; margin-right:10px"><a href="goQuestion.aspx">
+                                    <asp:Image ID="Image1" Width="150" Height="50" runat="server" ImageUrl="~/image/goquestion.png" /></a></span>
                             
                             </ItemTemplate>
 
@@ -162,7 +164,8 @@
                                 提问时间：
                                 <asp:Label ID="datetimeLabel" runat="server" Text='<%# Eval("datetime") %>' />
                                 </span>
-                                 <asp:ImageButton ID="goAnswer" runat="server" ImageUrl="~/image/goanswer.png" CssClass="goQues" />
+                                <span style="height:50px; width:150px; float:right; margin-right:10px"><a href="goAnswer.aspx">
+                                    <asp:Image ID="Image1" Width="150" Height="50" runat="server" ImageUrl="~/image/goanswer.png" /></a></span>
                             </ItemTemplate>
 
                         </asp:DataList>

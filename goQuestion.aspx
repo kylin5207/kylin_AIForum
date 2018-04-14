@@ -8,7 +8,7 @@
         <img src="image/goquestion.jpg"  width="1350" height="300" style="margin-top:-57px; margin-left:0px"/>
     </div>
     <div class="contain">
-        <table width="700" height="500" style="margin-left:300px;" cellspacing="0" cellpadding="0" rules="cols" border="1">
+        <table width="700" height="400" style="margin-left:300px;" cellspacing="0" cellpadding="0" rules="cols" border="1">
             <tr height="40">
                 <td class="table-title">
                     问题名称：
@@ -17,7 +17,7 @@
 
             <tr>
                 <td>
-                    <asp:TextBox ID="answertitle" runat="server" Height="180px" TextMode="MultiLine" Width="579px" CssClass="answertitle"></asp:TextBox>
+                    <asp:TextBox ID="answertitle" placeholder="在此输入问题标题" runat="server" Height="24px" Width="579px" CssClass="answertitle"></asp:TextBox>
                 </td>
             </tr>
 
@@ -29,13 +29,13 @@
 
             <tr>
                 <td>
-                    <asp:TextBox ID="TextBox1" runat="server" Height="180px" TextMode="MultiLine" Width="579px" CssClass="answertitle"></asp:TextBox>
+                    <asp:TextBox ID="TextBox1" runat="server" placeholder="在此输入问题详情" Height="180px" TextMode="MultiLine" Width="579px" CssClass="answertitle"></asp:TextBox>
                 </td>
             </tr>
 
             <tr>
-                <td>
-                     <asp:TextBox ID="TextBox2" runat="server" Height="180px" TextMode="MultiLine" Width="579px" CssClass="answertitle"></asp:TextBox>
+                <td align="center">
+                    <asp:Button ID="submitQuestion" runat="server"  Text="发布问题" BackColor="#4C80BA" Font-Bold="True" ForeColor="White" Height="26px" Width="113px" /> 
                 </td>
             </tr>
         </table>
