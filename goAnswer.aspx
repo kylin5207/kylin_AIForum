@@ -8,7 +8,7 @@
         <img src="image/goanswer.jpg"  width="1350" height="300" style="margin-top:-57px; margin-left:0px"/>
     </div>
     <div class="contain">
-        <table width="700" height="600" style="margin-left:300px;" cellspacing="0" cellpadding="0" rules="cols" border="1">
+        <table width="700" height="550" style="margin-left:300px;" cellspacing="0" cellpadding="0" rules="cols" border="1">
             <tr height="40">
                 <td class="table-title">
                     问题详情：
@@ -58,9 +58,9 @@
                 </td>
             </tr>
 
-            <tr>
+            <tr height="190">
                 <td>
-                    <asp:TextBox ID="TextBox1" runat="server" placeholder="在此输入回答内容" Height="180px" TextMode="MultiLine" Width="579px" CssClass="answertitle"></asp:TextBox>
+                    <asp:TextBox ID="TextBox1" runat="server" placeholder="在此输入回答内容" Height="156px" TextMode="MultiLine" Width="579px" CssClass="answertitle"></asp:TextBox>
                 </td>
             </tr>
 

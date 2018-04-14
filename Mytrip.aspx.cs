@@ -5,11 +5,11 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class goQuestion : System.Web.UI.Page
+public partial class Mytrip : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        this.Title = "提问首页";
+        this.Title = "旅途";
+        this.spacename.Text = LoginBase.SpaceName;
     }
-    
 }

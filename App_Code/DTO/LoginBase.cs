@@ -60,6 +60,17 @@ public class LoginBase
             return string.Empty;
         }
     }
+    public static string SpaceName
+    {
+        get
+        {
+            if (HttpContext.Current.Session["userbase"] != null)
+            {
+                return UserInfo.SpaceName;
+            }
+            return string.Empty;
+        }
+    }
 
     public static int RoleId
     {

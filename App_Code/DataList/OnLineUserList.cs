@@ -3,23 +3,23 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
-public partial class Chatting : System.Web.UI.Page
+/// <summary>
+/// OnLineUserList 的摘要说明
+/// </summary>
+public class OnLineUserList
 {
-    DataBase DB = new DataBase();
-    public List<OnLineUserListDto> onLineUserList = new List<OnLineUserListDto>();
-    protected void Page_Load(object sender, EventArgs e)
-    {
-        user_name.Text = LoginBase.username;
-        UserPic.ImageUrl = LoginBase.Image;
-        fromname.Text = LoginBase.username;
+    IDataBase DB = new DataBase();
+    //public OnLineUserList()
+    //{
+    //    //
+    //    // TODO: 在此处添加构造函数逻辑
+    //    //
 
-        getOnlineUserList();
-    }
-    public void getOnlineUserList()
+    //}
+    public List<OnLineUserListDto> getOnlineUserList()
     {
+        List<OnLineUserListDto> returnList = new List<OnLineUserListDto>();
         string sql = string.Format("select * from [User_Info]");
         DataTable UserTable = DB.GetTable(sql);
         for (int i = 0; i < UserTable.Rows.Count; i++)
@@ -28,7 +28,8 @@ public partial class Chatting : System.Web.UI.Page
             user.UserId = int.Parse(UserTable.Rows[i]["UserId"].ToString());
             user.UserName = UserTable.Rows[i]["userName"].ToString();
             user.UserImg = UserTable.Rows[i]["userPic"].ToString();
-            onLineUserList.Add(user);
+            returnList.Add(user);
         }
+        return returnList;
     }
 }

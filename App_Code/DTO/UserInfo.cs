@@ -13,6 +13,10 @@ public class UserInfo
     /// </summary>
     public string UserID = "";
     /// <summary>
+    /// 用户ID
+    /// </summary>
+    public string SpaceName = "";
+    /// <summary>
     /// 用户名
     /// </summary>
     public string UserName = "";

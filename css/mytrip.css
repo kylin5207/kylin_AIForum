@@ -2,16 +2,17 @@
     width:1350px;
     margin-left:0px;
     padding:0px;
-    height:243px;
+    height:100px;
 }
 
 .contain{
     width:1350px;
-    height:425px;
+    height:800px;
     margin-top:0px;
     margin-left:0px;
     margin-right:0px;
     margin-bottom:-50px;
+    padding-top:3px;
     background-color:#D5DCE1;
 }
 
@@ -25,6 +26,14 @@
     line-height:40px;
 }
 
-.answertitle{
-    margin-left:65px;
+.contable{
+    margin-left:170px;
+    background-color:yellow;
+}
+
+.spacename{
+    text-align:center;
+    font-size:xx-large;
+    height:80px;
+    background-color:black;
 }

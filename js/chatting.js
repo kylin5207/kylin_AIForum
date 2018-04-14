@@ -1,13 +1,31 @@
-﻿var fromname = "@LoginBase.username";//document.getElementById('name').value;
-var UserImg = "@LoginBase.Image";
+﻿var fromname = document.getElementById('ContentPlaceHolder1_user_name').innerText;
+var UserImg = document.getElementById('ContentPlaceHolder1_UserPic').src;
     
 
 var msgContainer = document.getElementById('message_box');
 var text = document.getElementById('message');
-connect();
+connect1();
 var ws;
 //var WebSocketaddress;
-
+function connect1() {
+    $.ajax({
+        url: "/Home/UserJoinOnline",
+        dataType: 'json',
+        type: 'post',
+        success: function (result) {
+            var json = eval('(' + result + ')');
+            var num = json[0]["type"];
+            var returnval = json[0]["data"];
+            //0-成功 1-服务器操作异常 2-用户操作异常
+            if (num != "0") {
+                layer.alert(returnval);
+            }
+        },
+        error: function (result) {
+            console.log('用户加入聊天室出现错误' + result);
+        }
+    });
+}
 //创建连接
 function connect() {
 
@@ -15,10 +33,10 @@ function connect() {
         layer.msg("您的浏览器不支持WebSocket");
         return;
     }
-    //var address = "ws://127.0.0.1:8081";//本地测试用
+    var address = "ws://127.0.0.1:8081";//本地测试用
     // GetWebSocketaddress();
-    var WebSocketaddress = $("#WebSocketaddress").attr("value");
-    ws = new WebSocket(WebSocketaddress);
+    //var WebSocketaddress = $("#WebSocketaddress").attr("value");
+    ws = new WebSocket(address);
     //打开事件
     ws.onopen = function (e) {
         $.ajax({

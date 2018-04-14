@@ -1,7 +1,27 @@
-﻿/*chatbox*/
+﻿.con-title{
+    width:1350px;
+    margin-left:0px;
+    padding:0px;
+    height:143px;
+}
+
+.contain{
+    width:1350px;
+    height:800px;
+    margin-top:0px;
+    margin-left:0px;
+    margin-right:0px;
+    margin-bottom:-50px;
+    padding-top:3px;
+    background-color:#D5DCE1;
+}
+
+/*chatbox*/
 .chatbox{
      overflow:hidden; 
      background-color:rgba(255, 255, 255, 0.77);
+     width:1100px;
+     margin-left:120px;
 }
 
 /*chat_top*/
