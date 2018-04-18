@@ -12,6 +12,10 @@ public partial class Chatting : System.Web.UI.Page
     public List<OnLineUserListDto> onLineUserList = new List<OnLineUserListDto>();
     protected void Page_Load(object sender, EventArgs e)
     {
+        if (LoginBase.username.ToString() == "")
+        {
+            Response.Write("<script language='javascript'>alert('您尚未登录，即将前往登录页面');location.href='../login.aspx';</script>");
+        }
         user_name.Text = LoginBase.username;
         UserPic.ImageUrl = LoginBase.Image;
         fromname.Text = LoginBase.username;

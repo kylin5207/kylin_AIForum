@@ -105,8 +105,9 @@ width: 0;
 
 .write_box{ height:100px; overflow:hidden; border-radius:5px;}
 .write_area{ 
-    border: 2px solid #E3E8ED;
-    border-bottom: none;
+    border-left: 2px solid #E3E8ED;
+    border-right: 2px solid #E3E8ED;
+    border-top: 2px solid #E3E8ED;
     padding: 5px;
     outline: none;
     color: #0c0a0a;
@@ -117,7 +118,10 @@ width: 0;
     width: calc(100% - 14px);*/
     max-width:100% !important;
     height: 56px;
-
+    width: 302px;
+    border-bottom-style: none;
+    border-bottom-color: inherit;
+    border-bottom-width: medium;
 }
 .facebox{ height:32px; width:100%; background-color:#E3E8ED;padding-right:0px;}
 .sub_but{ float:right; padding:0 25px; background-color:#7E90A5; outline:none; border:none; height:32px; cursor:pointer; line-height:30px; color:#FFF;}

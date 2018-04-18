@@ -7,7 +7,7 @@
 
 .contain{
     width:1350px;
-    height:800px;
+    height:1010px;
     margin-top:0px;
     margin-left:0px;
     margin-right:0px;
@@ -27,23 +27,99 @@
 }
 
 .contable{
-    margin-left:170px;
-    background-color:yellow;
+    margin-left:45px;
+    background-color:#f0f5fa;
 }
 
 .spacename{
     text-align:center;
-    font-size:xx-large;
-    height:80px;
-    background-color:black;
-    line-height:80px;
+    height:45px;
+    background-color:#4C80BA;
     color:white;
 }
 .space{
+    margin-top:6px;
      text-align:center;
+     display:inline-block;
+     width:700px;
     font-size:xx-large;
-    height:80px;
-    background-color:black;
-    line-height:80px;
+    height:25px;
+    line-height:25px;
     color:white;
+}
+
+.host{
+    display:inline-block;
+    height:15px;
+    width:700px;
+    margin-top:3px;
+    font-size:14px;
+    line-height:15px;
+    color:white;
+}
+
+.message-user{
+    float:left;
+    width:100px;
+    margin-left:30px;
+    height:130px;
+    
+}
+
+.message-con{
+    float:left;
+    margin-left:20px;
+    width:1050px;
+    height:120px;
+    background-color:#ABD8DE;
+   
+}
+
+.messagecome{
+    background-color:#4C80BA;
+    color:white;
+    width:100px;
+    display:inline-block;
+    text-align:center;
+    height:30px;
+    line-height:30px;
+    margin-top:-5px;
+}
+
+.message{
+    display:inline-block;
+    margin-left:30px;
+    width:900px;
+    margin-top:20px;
+    height:70px;
+    font-size:25px;
+}
+
+.date{
+    margin-left:700px;
+    display:inline-block;
+    height:14px;
+    line-height:14px;
+    width:150px;
+    color:#4C80BA;
+}
+
+.wanna{
+     margin-left:0px;
+    font-size:20px;
+    height:30px;
+    line-height:30px;
+    color:white;
+    background-color:#4C80BA;
+}
+
+.leavemess{
+    margin-left:260px;
+    float:left;
+}
+
+.search{
+    float:left;
+    margin-left:300px;
+    margin-top:10px;
 }

@@ -46,8 +46,8 @@
             <table border="1" cellspacing="0" cellpadding="0" height="600" width="1200" bgcolor="white">
                 <tr height="40">
                     <td class="con-title">
-                        <span>我的提问</span>
-                        <span class="more"><ins><a href="#">查看更多</a></ins></span>
+                        <span>我的最新提问</span>
+                        <span class="more"><ins><a href="myquestion.aspx">查看更多</a></ins></span>
                     </td>
                 </tr>
 
@@ -89,7 +89,7 @@
                 <tr height="40">
                     <td class="con-title">
                         <span>我的回答</span>
-                        <span class="more"><ins><a href="#">查看更多</a></ins></span>
+                        <span class="more"><ins><a href="myAnswer.aspx">查看更多</a></ins></span>
                     </td>
                     
                 </tr>
@@ -140,7 +140,7 @@
                 <tr height="40">
                     <td class="con-title">
                         <span>随便看看</span>
-                        <span class="more"><ins><a href="#">查看更多</a></ins></span>
+                        <span class="more"><ins><a href="moreQuestion.aspx">查看更多</a></ins></span>
                     </td>
                     
                 </tr>

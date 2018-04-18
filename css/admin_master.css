@@ -1,0 +1,97 @@
+﻿body,div,ul{
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    width:1350px;
+    height:680px;
+    overflow:hidden;
+
+}
+
+.admin-nav{
+    width:150px;
+    height:680px;
+    background-color:#202133;
+    color:#5A5B70;
+    float:left;
+    position:fixed;
+    
+}
+
+.admin-info{
+    width:100px;
+    margin-left:25px;
+    padding-top:20px;
+    height:150px;
+}
+
+.admin-info img{
+    border-radius:40px;
+}
+
+.admin-title{
+    display:inline-block;
+    height:20px;
+    width:80px;
+    font-size:x-large;
+    line-height:20px;
+    text-align:center;
+}
+
+.nav-con{
+    width:150px;
+}
+
+.nav-con img{
+    vertical-align:middle;
+}
+.nav-con li{
+    margin-left:20px;
+    margin-bottom:20px;
+    list-style:none;
+    height:25px;
+    line-height:25px;
+}
+
+.nav-con li a{
+    text-decoration:none;
+    color:#5A5B70;
+}
+
+.nav-con li a:hover{
+    color:orange;
+}
+
+.banner{
+    width:1370px;
+    height:50px;
+    background-color:#afdbdb;
+}
+.sys-name{
+    width:600px;
+    height:50px;
+    font-size:30px;
+    color:#202133;
+    margin-left:160px;
+}
+.back{
+    margin-left:680px;
+}
+.back a{
+    text-decoration:none;
+    color:black;
+}
+
+.back a:hover{
+    color:orange;
+}
+
+.admin-con{
+    float:left;
+    width:1366px;
+    height:800px;
+    background-color:#e5ebfb;
+ 
+}

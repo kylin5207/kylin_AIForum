@@ -77,7 +77,7 @@
                                 <td>
 
                                     <asp:FileUpload ID="PicUpLoad" runat="server" Width="176px"/>
-   
+           
                                     <span style="color:red; width:50px">(支持.jpg,.png格式)</span>
 
                                 </td>

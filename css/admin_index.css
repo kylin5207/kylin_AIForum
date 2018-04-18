@@ -1,0 +1,46 @@
+﻿div{
+    margin:0px;
+    padding:0px;
+}
+
+.con-title{
+    width:1127px;
+    height:200px;
+    margin-left:200px;
+    margin-top:30px;
+}
+
+
+.con-block{
+    width:260px;
+    height:180px;
+    float:left;
+    margin-top:10px;
+    margin-left:15px;
+    background-image:url(http://localhost:4157/image/adminbg2.png);
+}
+
+.con-block img{
+    vertical-align:middle;
+    float:left;
+    margin-top:20px;
+}
+
+.case-name{
+    width:100px;
+    height:40px;
+    font-size:x-large;
+    margin-top:50px;
+    float:left;
+    color:#187787;
+}
+
+.date{
+    width:110px;
+    height:20px;
+    line-height:20px;
+    color:pink;
+    margin-top:3px;
+    margin-left:7px;
+    color:#B45825;
+}

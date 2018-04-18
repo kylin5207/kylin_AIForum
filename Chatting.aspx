@@ -44,15 +44,15 @@
                                     </div>
                                     <div class="item_right">
                                     
-                                        <div class="msg other">近日，TIOBE发布了2014年9月的编程语言排行榜，Java、C++跌至历史最低点，前三名则没有变化，依旧是C、Java、Objective-C。</div>
-                                        <div class="name_time">猫猫 · 3分钟前</div>
+                                        <div class="msg other">请大家遵守网络聊天秩序，营造绿色和谐聊天氛围。</div>
+                                        <div class="name_time">管理员 · 3分钟前</div>
                                      </div>
                                 </div>
                                 <br />
                           </div>
                         
                          <div class="write_box">
-                             <textarea id="message" name="message" class="write_area col-md-12 col-sm-12 col-xs-12" placeholder="说点啥吧..."></textarea>
+                             <textarea id="message" name="message" class="write_area col-md-12 col-sm-12 col-xs-12" placeholder="快点加入热聊吧~" style="background-color: #99CCFF"></textarea>
                               <%--<input type="hidden" name="fromname" id="fromname" value="@LoginBase.username" />--%>
                              <asp:Label ID="fromname" runat="server" Text="Label" Visible="False"></asp:Label>
                               <input type="hidden" name="to_uid" id="to_uid" value="0">
@@ -76,10 +76,7 @@
                     }
                     %>
                 
-                <%--@*<li class="fn-clear" data-id="2"><span><img src="~/Image/53f44283a4347.jpg" width="30" height="30" alt="" /></span><em>猫猫</em><small class="online" title="在线"></small></li>
-                <li class="fn-clear" data-id="3"><span><img src="~/Image/53f442834079a.jpg" width="30" height="30" alt="" /></span><em>白猫</em><small class="online" title="在线"></small></li>
-                <li class="fn-clear" data-id="3"><span><img src="~/Image/53f442834079a.jpg" width="30" height="30" alt="" /></span><em>白猫</em><small class="online" title="在线"></small></li>*@--%>
-            
+               
             </ul>
         </div>
     </div>

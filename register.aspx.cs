@@ -14,7 +14,7 @@ public partial class register: System.Web.UI.Page
   
     protected void Page_Load(object sender, EventArgs e)
     {
-        
+        this.Title = "新用户注册页";
     }
 
     /*用于检测用户名是否已经存在的方法，返回bool*/
@@ -67,7 +67,7 @@ public partial class register: System.Web.UI.Page
                 {
                     try
                     {
-                        this.PicUpLoad.SaveAs(Server.MapPath("~/image/userpic") + PicUpLoad.FileName);
+                        this.PicUpLoad.SaveAs(Server.MapPath("~/image/userpic/") + PicUpLoad.FileName);
                         ImagePath = "~/image/userpic/" + PicUpLoad.FileName;
                     }
                     catch (Exception ex)

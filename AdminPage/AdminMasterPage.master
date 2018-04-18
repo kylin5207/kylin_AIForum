@@ -4,41 +4,45 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    
     <title>后台管理页面</title>
+    
     <link href="CSS/app.css" rel="stylesheet" />
-        <link href="CSS/base.css" rel="stylesheet" />
-        <link href="CSS/bootstrap.min.css" rel="stylesheet" />
-        <link href="CSS/common.css" rel="stylesheet" />
-        <link href="CSS/font-awesome.css" rel="stylesheet" />
-        <link href="CSS/main.css" rel="stylesheet" />
-        <link href="../css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-        <script src="../js/jquery-1.10.2.min.js"></script>
+    <link href="CSS/base.css" rel="stylesheet" />
+    <link href="CSS/bootstrap.min.css" rel="stylesheet" />
+    <link href="CSS/common.css" rel="stylesheet" />
+    <link href="CSS/font-awesome.css" rel="stylesheet" />
+    <link href="CSS/main.css" rel="stylesheet" />
+    <link href="../css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="../js/jquery-1.10.2.min.js"></script>
     <asp:ContentPlaceHolder id="head" runat="server">
         
     </asp:ContentPlaceHolder>
 </head>
+
 <body>
     <!--header-->
     <div class="header">
         <a href="~/">
-            <img src="~/Image/xiaotuzi_meitu_1.png" class="logo f-left" />
+            <img src="../image/logo.png" class="logo f-left"/> 
         </a>
         <span class="line f-left"></span>
-        <div class="user-ctn f-left">
-            <i class="fa fa-volume-off" aria-hidden="true"></i>
-              --  后台管理12
+        <div class="user-ctn f-left" style="font-size:x-large" >
+            <i class="fa fa-volume-off" style="font-size:x-large" aria-hidden="true"></i>
+              人工智能爱好者主题网站后台管理
         </div>
         <div class="f-right">
             <i class="fa fa-sign-in" aria-hidden="true"></i>
-                <a href="/Show/Login"><button class="button">登录</button></a>
+            <span class="back"><a href="../Index.aspx">返回</a></span>
         </div>
     </div>
     <!--header end-->
     <!--menu-->
     <div class="app-menu-left">
         <div class="menu">
-            <div class="menu-action"><i class="fa fa-bars" aria-hidden="true"></i></div>
+            <div class="menu-action"></div>
             <div class="menu-box">
                 <div class="menu-item">
                     <a href="/AdminPage/index.aspx"><i class="menu-item-icon fa-home fa"></i><span>首页</span></a>
@@ -47,7 +51,7 @@
             </div>
             <div class="menu-box">
                 <div class="menu-item">
-                    <a href="/Administrator/AHome/UserManagement">
+                    <a href="/AdminPage/userPage.aspx">
                         <i class="menu-item-icon fa-users fa"></i>
                         <span>用户管理</span>
                     </a>

@@ -5128,7 +5128,7 @@ tr:hover .move-btn {
 	left: 160px;
 	overflow: auto;
 	/*min-width: 1100px;*/
-	background: #f3f3f3
+	background: #ffffff
 }
 
 .z-index-10000 {
@@ -5250,13 +5250,17 @@ tr:hover .move-btn {
 
 .menu {
 	overflow: hidden;
-	background: #333;
-	width: 100%;
+	background: #2f5a75;
+	width: 85%;
 	height: 100%
 }
 
 .menu,.menu .menu-box a {
-	color: #999
+	color: #ffffff;
+}
+
+.menu-box a:hover{
+    color: orange;
 }
 
 .menu .menu-box:nth-child(2) .fa {

@@ -1,0 +1,45 @@
+﻿div{
+    margin:0px;
+    padding:0px;
+}
+.con-title{
+    margin-left:152px;
+    background-color:white;
+    height:34px;
+}
+
+.table-title{
+    padding-left:20px;
+    background-color:#4C80BA;
+    color:white;
+    display:inline-block;
+    width:700px;
+    height:40px;
+    line-height:40px;
+}
+
+.publish-table{
+   margin-left:250px;
+  margin-top:10px;
+    border:1px solid;
+  
+}
+.input{
+    margin-left:140px;
+}
+
+.coninput{
+    margin-left:130px;
+}
+
+.publishimage{
+    margin-left:240px;
+}
+
+.publishbtn{
+    margin-left:320px;
+}
+
+.image{
+    vertical-align:middle;
+}

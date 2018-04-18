@@ -35,7 +35,7 @@
 
             <tr>
                 <td align="center">
-                    <asp:Button ID="submitQuestion" runat="server"  Text="发布问题" BackColor="#4C80BA" Font-Bold="True" ForeColor="White" Height="26px" Width="113px" /> 
+                    <asp:Button ID="submitQuestion" runat="server"  Text="发布问题" BackColor="#4C80BA" Font-Bold="True" ForeColor="White" Height="26px" Width="113px" OnClick="submitQuestion_Click" /> 
                 </td>
             </tr>
         </table>

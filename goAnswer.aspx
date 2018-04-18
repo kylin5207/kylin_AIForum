@@ -32,6 +32,7 @@
                            <div class="question-block">
                                <span class="question-title">
                                     问题：<asp:Label ID="questionnameLabel" runat="server" Text='<%# Eval("questionname") %>' />
+                                  
                                 </span>
                                <br />
                                <div class="question-con">
@@ -66,7 +67,7 @@
 
             <tr>
                 <td align="center">
-                    <asp:Button ID="submitQuestion" runat="server"  Text="提交答案" BackColor="#4C80BA" Font-Bold="True" ForeColor="White" Height="26px" Width="113px" /> 
+                    <asp:Button ID="submitQuestion" runat="server"  Text="提交答案" BackColor="#4C80BA" Font-Bold="True" ForeColor="White" Height="26px" Width="113px" OnClick="submitQuestion_Click" /> 
                 </td>
             </tr>
         </table>

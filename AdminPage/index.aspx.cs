@@ -22,8 +22,8 @@ public partial class AdminPage_index : System.Web.UI.Page
 
         string userName = LoginBase.username;
         label_UserName.Text = userName;
-        string sql_getUser = "select * from [User] where UserId = "+1;
-        DataTable dt_user = IDB.GetTable(sql_getUser);
+        //string sql_getUser = "select * from [User] where UserId = "+1;
+        //DataTable dt_user = IDB.GetTable(sql_getUser);
 
     }
 }

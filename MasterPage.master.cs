@@ -31,6 +31,8 @@ public partial class MasterPage : System.Web.UI.MasterPage
             hello.Text = " ,晚上好~";
         }
 
+       
+
 
     }
     protected void goback_Click(object sender, EventArgs e)

@@ -26,6 +26,12 @@
 					    <li><a href="Question.aspx" >问答</a></li>
 					    <li><a href="Chatting.aspx">聚吧</a></li>
 					    <li><a href="Mytrip.aspx">旅途</a></li>
+                        <li class="personal"><a href="personal.aspx">个人中心</a></li>
+                        <% if (LoginBase.RoleId == 1)
+                           { %>
+                        <li id="admin"><a href="Admin-index.aspx">后台管理</a></li>
+                               
+                          <% } %>
 				    </ul>
                 
                     <span dir ="rtl"class="login">

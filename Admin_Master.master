@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin_Master.master.cs" Inherits="Admin_Master" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="css/admin_master.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    
+    <form id="form1" runat="server">
+        <div class="admin-nav">
+            <div class="admin-info">
+                <asp:Image ID="admin_pic" runat="server" Width="80" Height="80" />
+                <br />
+              <span class="admin-title"><asp:Label ID="admin_name" runat="server" Text="Label"></asp:Label></span>
+            </div>
+
+            <ul class="nav-con">
+                <li class="admin-name"><img src="image/useradmin.png" height="25" />&nbsp;<a href="admin_user.aspx">用户管理</a></li>
+                
+                <li class="admin-name"><img src="image/newsadmin.png" height="25" />&nbsp;<a href="admin_new.aspx">新闻管理</a></li>
+                
+                <li class="admin-name"><img src="image/productadmin.png" height="25"/>&nbsp;<a href="admin_product.aspx">产品管理</a></li>
+                 
+                <li class="admin-name"><img src="image/messageadmin.png" height="25"/>&nbsp;<a href="#">问答管理</a></li>
+            </ul>
+        </div>
+        <div class ="banner">
+            <span class="sys-name">人工智能爱好者主题网站后台管理</span>
+            <span class="back"><img src="image/exit.png" />&nbsp;&nbsp;<a href="Index.aspx">返回</a></span>
+        </div>
+        <div class="admin-con">
+        
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+       
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
