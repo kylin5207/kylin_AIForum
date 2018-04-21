@@ -20,11 +20,15 @@ public partial class publishnew : System.Web.UI.Page
     }
     protected void Button2_Click(object sender, EventArgs e)
     {
-        if (this.PicUpLoad.HasFile)
+        if (this.PicUpLoad.HasFile) //判断上传文件是否成功
         {
                     this.PicUpLoad.SaveAs(Server.MapPath("~/image/newspic/") + PicUpLoad.FileName);
-                    ImagePath = "image/newspic/" + PicUpLoad.FileName;
+                    ImagePath = "/image/newspic/" + PicUpLoad.FileName;
                     this.newimage.ImageUrl = ImagePath;
+        }
+        else
+        {
+            Response.Write("<script language='javascript'>alert('信息提示：照片为空');</script>");
         }
               
     }
@@ -32,18 +36,16 @@ public partial class publishnew : System.Web.UI.Page
     {
         newTitle = TextBox1.Text.ToString();
         newcon  = TextBox2.Text.ToString();
-        String date = DateTime.Now.ToShortDateString();
+        String date = DateTime.Now.ToLocalTime().ToString();
+        String path = this.newimage.ImageUrl;
         if(TextBox1.Text == null || TextBox2.Text == null)
         {
             Response.Write("<script language='javascript'>alert('信息提示：请输入新闻内容');</script>");
         }
         
-        if (ImagePath == null)
-        {
-            ImagePath = "~/image/newspic/Default.jpg";
-        }
+        
 
-        string strsql = "insert into News(newTitle,newDescription,newPic,Date,Enable) values('" + newTitle + "','" + newcon + "','" + ImagePath + "','" + date + "','1')";
+        string strsql = "insert into News(newTitle,newDescription,newPic,Date,Enable) values('" + newTitle + "','" + newcon + "','" + path + "','" + date + "','1')";
         int insertResult = IDB.InsertReturnId(strsql);
 
         if (insertResult > 0)

@@ -12,15 +12,15 @@
         </div>
 
         <div class="con-block">
-            <a href="#"><img src="image/adminproduct02.png" width="150" /></a>
-            <span class="case-name">产品更新</span>
+            <a href="productupdate.aspx"><img src="image/adminproduct02.png" width="150" /></a>
+            <span class="case-name">产品修改</span>
             <span class="date">
                 <asp:Label ID="Label1" runat="server" ></asp:Label></span>
         </div>
 
         <div class="con-block">
-            <a href="#"><img src="image/adminnew3.png" width="150" /></a>
-            <span class="case-name">产品删除</span>
+            <a href="searchpro.aspx"><img src="image/adminnew03.png" width="150" /></a>
+            <span class="case-name">查找产品</span>
             <span class="date"><asp:Label ID="Label2" runat="server" ></asp:Label></span>
         </div>
 

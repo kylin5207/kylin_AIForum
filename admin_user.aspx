@@ -10,8 +10,8 @@
            </div>  
     <div class="admin_table"> 
          <br />
-          <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="userID" DataSourceID="SqlDataSource1" Height="500px" Width="900px" PageSize="6" >
-              <AlternatingRowStyle BackColor="#CCCCFF" HorizontalAlign="Center" />
+          <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="userID" DataSourceID="SqlDataSource1" Height="500px" Width="954px" PageSize="5" CellPadding="0" PagerStyle-HorizontalAlign="Center" PagerStyle-VerticalAlign="Middle" PagerStyle-Height="30px" FooterStyle-HorizontalAlign="Center" FooterStyle-VerticalAlign="Middle" HeaderStyle-HorizontalAlign="Center" HeaderStyle-VerticalAlign="Middle" HeaderStyle-Height="24px" HorizontalAlign="Left">
+              <AlternatingRowStyle BackColor="#EDEDF8" HorizontalAlign="Center" />
               <Columns>
                   
                   <asp:BoundField DataField="userID" HeaderText="userID" InsertVisible="False" ReadOnly="True" SortExpression="userID" />

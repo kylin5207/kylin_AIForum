@@ -17,34 +17,43 @@
 
             <tr height="150">
                 <td>
-                    <asp:DataList ID="DataList1" runat="server" Height="200px" 
+                   <%-- <asp:DataList ID="DataList1" runat="server" Height="200px" 
         Width="720px" CaptionAlign="Top" CellPadding="10" GridLines="Horizontal" HorizontalAlign="Center"  style="margin-left: 0px; margin-right: 0px" CellSpacing="10"  CssClass="answerlist" DataSourceID="SqlDataSource1" BorderStyle="None">
-                        <ItemTemplate>
-                            <div class="who-question">
-                                <asp:Image ID="Image1" runat="server" ImageUrl='<%# Eval("userPic") %>' Width="100" Height="100" />
+                        <ItemTemplate>--%>
+                    <div class="answerlist" style="margin-left: 0px; margin-right: 0px; padding-top: 50px;">
+                        <div class="who-question">
+                                <%--<%# Eval("userPic") %>'--%>
+                                <img ID="Image1" src="<%= dt_question.Rows[0]["userPic"] %>" width="100" height="100"/>
+                                <%--<asp:Image ID="Image1" runat="server" ImageUrl="+<%= dt_question.Rows[0]["userPic"] %>+" Width="100" Height="100" />--%>
                                 <span style="display:inline-block; text-align:center; width:100px; height:30px; line-height:30px" >
-                                    <asp:Label ID="userNameLabel" runat="server" Text='<%# Eval("userName") %>' />
+                                    <%--<asp:Label ID="userNameLabel" runat="server" Text='<%# Eval("userName") %>' />--%>
+                                    <label id="userNameLabel"><%=dt_question.Rows[0]["userName"] %></label>
                                 </span>
                             </div>
                             <div class="date">
-                             <asp:Label ID="datetimeLabel" runat="server" Text='<%# Eval("datetime") %>' />
+                             <%--<asp:Label ID="datetimeLabel" runat="server" Text='<%# Eval("datetime") %>' />--%>
+                                <label id="datetimeLabel"><%=dt_question.Rows[0]["datetime"] %></label>
                                </div>
                            <div class="question-block">
                                <span class="question-title">
-                                    问题：<asp:Label ID="questionnameLabel" runat="server" Text='<%# Eval("questionname") %>' />
-                                  
+                                    问题：<%--<asp:Label ID="questionnameLabel" runat="server" Text='<%# Eval("questionname") %>'/>--%>
+                                   <label id="questionnameLabel"><%=dt_question.Rows[0]["questionname"] %></label>
                                 </span>
                                <br />
                                <div class="question-con">
-                                    <asp:Label ID="questionContentLabel" runat="server" Text='<%# Eval("questionContent") %>' />
+                                    <%--<asp:Label ID="questionContentLabel" runat="server" Text='<%# Eval("questionContent") %>' />--%>
+                                   <label id="questionContentLabel"><%=dt_question.Rows[0]["questionContent"] %></label>
                                </div>
                                <br />
                                
                            </div>
-                        </ItemTemplate>
+                    </div>
+                            
+                        <%--</ItemTemplate>
 
-                    </asp:DataList>
+                    </asp:DataList>--%>
                     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:AIFORUMConnectionString %>" SelectCommand="SELECT TOP (1) User_Info.userName, User_Info.userPic, User_Question.questionname, User_Question.questionContent, User_Question.datetime FROM User_Question INNER JOIN User_Info ON User_Info.userID = User_Question.userID WHERE (User_Question.userID = @userID) ORDER BY User_Question.datetime DESC">
+                    <%--<asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:AIFORUMConnectionString %>" SelectCommand="SELECT TOP (1) User_Info.userName, User_Info.userPic, User_Question.questionname, User_Question.questionContent, User_Question.datetime FROM User_Question INNER JOIN User_Info ON User_Info.userID = User_Question.userID WHERE (User_Question.userID = @userID) ORDER BY User_Question.datetime DESC">--%>
                         <SelectParameters>
                             <asp:SessionParameter DefaultValue="1" Name="userID" SessionField="userId" Type="Int32" />
                         </SelectParameters>

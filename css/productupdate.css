@@ -5,9 +5,9 @@
 
 .admin_table{
     width:1200px;
-    margin-left:220px;
+    margin-left:200px;
     height:600px;
-    margin-top:-5px;
+    margin-top:20px;
 }
 
 .con-title{
@@ -15,4 +15,7 @@
     margin-left:152px;
     background-color:white;
     height:34px;
+}
+.enable{
+    width:20px;
 }

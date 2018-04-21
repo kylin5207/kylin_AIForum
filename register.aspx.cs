@@ -68,7 +68,7 @@ public partial class register: System.Web.UI.Page
                     try
                     {
                         this.PicUpLoad.SaveAs(Server.MapPath("~/image/userpic/") + PicUpLoad.FileName);
-                        ImagePath = "~/image/userpic/" + PicUpLoad.FileName;
+                        ImagePath = "/image/userpic/" + PicUpLoad.FileName;
                     }
                     catch (Exception ex)
                     {

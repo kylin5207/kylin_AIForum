@@ -34,7 +34,7 @@
                                 
                                 <td>
                                     
-                                    <asp:TextBox ID="username" runat="server" Width="186px"></asp:TextBox>
+                                    <asp:TextBox ID="username" runat="server" Width="186px" placeholder="请在这里输入用户名~"></asp:TextBox>
                                     
                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="username" ErrorMessage="用户名不为空" Font-Bold="True" ForeColor="Red" SetFocusOnError="True">*用户名不为空!</asp:RequiredFieldValidator>
 
@@ -46,7 +46,7 @@
                                
                               <td>
 
-                                  <asp:TextBox ID="userpsw" runat="server" Width="186px" TextMode="Password"></asp:TextBox>
+                                  <asp:TextBox ID="userpsw" runat="server" Width="186px" TextMode="Password" placeholder="请在这里输入密码~" ></asp:TextBox>
 
                                   <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="userpsw" ErrorMessage="RequiredFieldValidator" Font-Bold="True" ForeColor="Red" SetFocusOnError="True">*密码不能为空!</asp:RequiredFieldValidator>
                                </td>
@@ -68,7 +68,7 @@
                           <tr>
                                 <td class="rowname"><span class="strike">*</span>空间昵称：</td>
                                 <td>
-                                    <asp:TextBox ID="spacename" runat="server" Width="186px"></asp:TextBox>
+                                    <asp:TextBox ID="spacename" runat="server" Width="186px" placeholder="请在这里输入控件昵称~"></asp:TextBox>
                                 </td>
                           </tr>
                           

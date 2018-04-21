@@ -29,7 +29,7 @@
                 
                 <li class="admin-name"><img src="image/productadmin.png" height="25"/>&nbsp;<a href="admin_product.aspx">产品管理</a></li>
                  
-                <li class="admin-name"><img src="image/messageadmin.png" height="25"/>&nbsp;<a href="#">问答管理</a></li>
+                <li class="admin-name"><img src="image/messageadmin.png" height="25"/>&nbsp;<a href="admin_QA.aspx">问答管理</a></li>
             </ul>
         </div>
         <div class ="banner">

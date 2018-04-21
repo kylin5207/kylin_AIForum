@@ -29,7 +29,7 @@ public partial class goQuestion : System.Web.UI.Page
     {
         String questitle = answertitle.Text;
         String quescon = TextBox1.Text;
-        String date = DateTime.Now.ToShortDateString();
+        String date = DateTime.Now.ToLocalTime().ToString();
         if(questitle == null || quescon == null)
         {
             Response.Write("<script language='javascript'>alert('信息提示：请输入问题内容');</script>");

@@ -41,7 +41,7 @@
                 <td>
                     <asp:FileUpload ID="PicUpLoad" runat="server" Width="176px" CssClass="publishimage"/>
                     <asp:Button ID="Button2" runat="server" Text="确定上传" OnClick="Button2_Click" />
-                    <asp:Image ID="newimage" runat="server" width="50" Height="50" CssClass="image"/>
+                    <asp:Image ID="newimage" runat="server" ImageUrl="~/image/upload.jpg" width="50" Height="50" CssClass="image"/>
                 </td>
             </tr>
 

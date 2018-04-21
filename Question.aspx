@@ -164,7 +164,7 @@
                                 提问时间：
                                 <asp:Label ID="datetimeLabel" runat="server" Text='<%# Eval("datetime") %>' />
                                 </span>
-                                <span style="height:50px; width:150px; float:right; margin-right:10px"><a href="goAnswer.aspx">
+                                <span style="height:50px; width:150px; float:right; margin-right:10px"><a href='goAnswer.aspx?SLBaBa=<%# Eval("questionID") %>'>
                                     <asp:Image ID="Image1" Width="150" Height="50" runat="server" ImageUrl="~/image/goanswer.png" /></a></span>
                             </ItemTemplate>
 
