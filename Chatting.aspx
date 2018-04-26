@@ -52,7 +52,7 @@
                           </div>
                         
                          <div class="write_box">
-                             <textarea id="message" name="message" class="write_area col-md-12 col-sm-12 col-xs-12" placeholder="快点加入热聊吧~" style="background-color: #99CCFF"></textarea>
+                             <textarea id="message" name="message" class="write_area col-md-12 col-sm-12 col-xs-12" placeholder="快点加入热聊吧~" style="background-color: #99CCFF; margin-left:484px"></textarea>
                               <%--<input type="hidden" name="fromname" id="fromname" value="@LoginBase.username" />--%>
                              <asp:Label ID="fromname" runat="server" Text="Label" Visible="False"></asp:Label>
                               <input type="hidden" name="to_uid" id="to_uid" value="0">

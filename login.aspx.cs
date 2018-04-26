@@ -13,7 +13,7 @@ public partial class login : System.Web.UI.Page
     IDataBase IDB = new DataBase();
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        this.Title = "用户登录页";
     }
     protected void Login_button_Click(object sender, EventArgs e)
     {

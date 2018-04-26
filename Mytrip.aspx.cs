@@ -17,6 +17,7 @@ public partial class Mytrip : System.Web.UI.Page
     static PagedDataSource pds = new PagedDataSource();//创建一个分页数据源的对象且一定要声明为静态
     static string connStr = System.Web.Configuration.WebConfigurationManager.ConnectionStrings["Connection"].ToString();
     SqlConnection conn = new SqlConnection(connStr);
+    IDataBase IDB = new DataBase();
     protected void Page_Load(object sender, EventArgs e)
     {
         //int userid = int.Parse(LoginBase.ID.ToString());//获取用户ID
@@ -108,5 +109,53 @@ public partial class Mytrip : System.Web.UI.Page
                 LastPage.Enabled = false;
             }
         }
+    }
+    protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
+    {
+        String leavemess = message.Text;
+        int userid = Convert.ToInt32(LoginBase.ID.ToString());
+        String date = DateTime.Now.ToLocalTime().ToString();
+        string strsql = "insert into User_Message(userID,TouserID,message,date,Enable) values("+userid+","+userid+",'"+leavemess+"','"+date+"','1')";
+        int insertResult = IDB.InsertReturnId(strsql);
+
+        if (insertResult > 0)
+        {
+            Response.Write("<script language='javascript'>alert('留言成功');location.href='../Mytrip.aspx';</script>");
+        }
+        else
+        {
+            Response.Write("<script language='javascript'>alert('信息提示：很遗憾，留言失败');</script>");
+        }
+    }
+
+    bool checkUsername(string username)
+    {
+        bool exist = false;
+
+        string sql_selectUser = "select * from [User_Info] where userName = '" + username + "'";
+
+        DataTable dt_user = IDB.GetTable(sql_selectUser);
+
+        if (dt_user.Rows.Count == 1)
+        {
+            exist = true;
+        }
+
+        return exist;
+    }
+
+    protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
+    {
+        string username = searchtext.Text;
+        if(checkUsername(username))
+        {
+            string return_Url = "<script language='javascript'>alert('跳转至目标用户留言板');location.href='../targetTrip.aspx?targetuser=" + username + "';</script>";
+            Response.Write(return_Url);
+        }
+        else
+        {
+            Response.Write("<script language='javascript'>alert('信息提示：该用户不存在');</script>");
+        }
+
     }
 }

@@ -1,0 +1,146 @@
+﻿body{
+    overflow:hidden;
+}
+
+.con-title{
+    width:1350px;
+    margin-left:0px;
+    padding:0px;
+    height:100px;
+}
+
+.con{
+	top: 60px;
+    position: relative;
+    width:1400px;
+    height:300px;
+    margin:0px auto;
+}
+
+.contain{
+    width:1380px;
+    height:448px;
+    margin-top:0px;
+    margin-left:0px;
+    margin-right:0px;
+    padding-top:3px;
+    background-color:#D5DCE1;
+}
+
+.table-title{
+    padding-left:20px;
+    background-color:#4C80BA;
+    color:white;
+    display:inline-block;
+    width:700px;
+    height:40px;
+    line-height:40px;
+}
+
+.contable{
+    margin-left:170px;
+    background-color:#f0f5fa;
+}
+
+.spacename{
+    text-align:center;
+    height:45px;
+    background-color:#4C80BA;
+    color:white;
+}
+.space{
+    margin-top:6px;
+     text-align:center;
+     display:inline-block;
+     width:700px;
+    font-size:xx-large;
+    height:25px;
+    line-height:25px;
+    color:white;
+}
+
+.host{
+    display:inline-block;
+    height:15px;
+    width:700px;
+    margin-top:3px;
+    font-size:14px;
+    line-height:15px;
+    color:white;
+}
+
+.message-user{
+    float:left;
+    width:100px;
+    margin-left:30px;
+    height:130px;
+    
+}
+
+.message-con{
+    float:left;
+    margin-left:20px;
+    width:1050px;
+    height:120px;
+    background-color:#ABD8DE;
+   
+}
+
+.messagecome{
+    background-color:#4C80BA;
+    color:white;
+    width:100px;
+    display:inline-block;
+    text-align:center;
+    height:30px;
+    line-height:30px;
+    margin-top:-5px;
+}
+
+.message{
+    display:inline-block;
+    margin-left:30px;
+    width:900px;
+    margin-top:20px;
+    height:70px;
+    font-size:25px;
+}
+
+.date{
+    margin-left:700px;
+    display:inline-block;
+    height:14px;
+    line-height:14px;
+    width:150px;
+    color:#4C80BA;
+}
+
+.wanna{
+     margin-left:0px;
+    font-size:20px;
+    height:30px;
+    line-height:30px;
+    color:white;
+    background-color:#4C80BA;
+}
+
+.leavemess{
+    margin-left:260px;
+    float:left;
+}
+
+.search{
+    float:left;
+    margin-left:300px;
+    margin-top:10px;
+}
+
+.foot{
+    margin-top:-100px;
+	background-color: #4C474E;
+	height: 50px;
+    width:100%;
+	position: relative;
+	bottom: -100px;
+    z-index:2;
+}

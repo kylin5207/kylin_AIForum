@@ -2,15 +2,22 @@
     width:1350px;
     margin-left:0px;
     padding:0px;
-    height:243px;
+    height:100px;
 }
 
 .contain{
     width:1350px;
-    height:600px;
+    height:515px;
     margin-top:0px;
     margin-left:0px;
     margin-right:0px;
     margin-bottom:-50px;
+    padding-top:3px;
     background-color:#D5DCE1;
+}
+
+.con-table{
+    background-color:white;
+    margin-left:330px;
+    text-align:center;
 }

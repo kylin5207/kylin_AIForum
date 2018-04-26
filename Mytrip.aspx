@@ -68,9 +68,9 @@
             
             <tr height="100">
                 <td>
-                    <asp:TextBox ID="TextBox1" runat="server" TextMode="MultiLine" Width="500px" Height="70px" CssClass="leavemess" placeholder="在此输入留言内容"></asp:TextBox>
-                    <span style="display:inline-block; float:left; margin-left:50px; margin-top:20px;"><a href="#">
-                        <img src="image/message.png" height="40" /></a></span>
+                    <asp:TextBox ID="message" runat="server" TextMode="MultiLine" Width="500px" Height="70px" CssClass="leavemess" placeholder="在此输入留言内容"></asp:TextBox>
+                    <span style="display:inline-block; float:left; margin-left:50px; margin-top:20px;">
+                        <asp:ImageButton ID="ImageButton1" ImageUrl="image/message.png" Height="40" runat="server" OnClick="ImageButton1_Click" /></span>
                 </td>
             </tr>
 
@@ -81,9 +81,9 @@
             </tr>
             <tr>
                 <td>
-                    <asp:TextBox ID="TextBox2" runat="server" TextMode="SingleLine" Width="399px" CssClass="search" placeholder="在此输入用户名"></asp:TextBox>
-                    <span style="display:inline-block; float:left; margin-left:110px;"><a href="#">
-                        <img src="image/searchuser.png" height="40" /></a></span>
+                    <asp:TextBox ID="searchtext" runat="server" TextMode="SingleLine" Width="399px" CssClass="search" placeholder="在此输入用户名"></asp:TextBox>
+                    <span style="display:inline-block; float:left; margin-left:110px;">
+                         <asp:ImageButton ID="ImageButton2" ImageUrl="image/searchuser.png" Height="40" runat="server" OnClick="ImageButton2_Click"/>
                 </td>
             </tr>
         </table>
